@@ -1,38 +1,87 @@
+input:focus,
+button:focus {
+	outline: none;
+}
 .App {
-  text-align: center;
-}
+	width: 100vw;
+	height: 80vh;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Register_Form {
+	width: 500px;
+	height: 550px;
+	padding: 80px;
+	background-color: rgb(34, 193, 241);
+	box-shadow: 0px 0px 20px 0px #8080cc;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.h1 {
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 000;
 }
-
-.App-link {
-  color: #61dafb;
+.Registerform {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+.TextInput {
+	height: 25px;
+	width: 500px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+	align-self: center;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-color: transparent;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	border-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgb(40, 165, 187);
+}
+.TextInput::placeholder {
+	color: aqua;
+	font-family: 'Open Sans', sans-serif;
+}
+.CheckboxLabel {
+	margin-left: 20px;
+	vertical-align: bottom;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: white;
+}
+.Checkbox_register {
+	width: 18px;
+	height: 18px;
+	vertical-align: top;
+	margin-right: 10px;
+	margin-left: -20px;
+	background-color: aquamarine;
+}
+.register_button {
+	height: 40px;
+	width: 100%;
+	padding: 15px 32px;
+	margin-top: 40px;
+	display: inline-block;
+
+	text-align: center;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+	font-style: 22px;
+
+	border: none;
+	border-radius: 40px;
+	color: white;
+	background-color: aqua;
+	box-shadow: black;
+}
+.Register_Form button:active{
+  transform: scale(0.9);
+  transition-duration: 100ms ;
 }
